@@ -33,7 +33,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # Lock files
-bun.lockb
+bun.lock
 package-lock.json
 yarn.lock
 pnpm-lock.yaml
@@ -51,3 +51,9 @@ temp/
 # Development
 README.dev.md
 CONTRIBUTING.md
+
+# Documentation
+docs/
+
+# Zip files
+*.zip
