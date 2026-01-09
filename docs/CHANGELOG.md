@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-01-10
+
+### Changed
+
+- Updated `.npmignore` to exclude documentation and zip files from npm package
+- Updated CI workflow test job name to include Node.js version
+
 ## [0.1.0] - 2026-01-10
 
 ### Added
@@ -20,5 +27,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Detection of leftover files in Library directories (Caches, Preferences, Application Support, Logs, etc.)
 - Interactive menu mode with file selection and confirmation prompts
 
-[Unreleased]: https://github.com/minagishl/void/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/minagishl/void/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/minagishl/void/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/minagishl/void/releases/tag/v0.1.0
