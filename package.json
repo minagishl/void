@@ -1,6 +1,6 @@
 {
   "name": "@minagishl/void",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "A minimal CLI that sends unwanted macOS apps—and their residual files—into the void.",
   "type": "module",
   "bin": {
