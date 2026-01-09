@@ -1,68 +1,68 @@
 {
-	"name": "@minagishl/void",
-	"version": "1.0.0",
-	"description": "A minimal CLI that sends unwanted macOS apps—and their residual files—into the void.",
-	"type": "module",
-	"bin": {
-		"void": "./dist/index.js"
-	},
-	"scripts": {
-		"build": "bun build src/index.ts --outdir dist --target node --minify && chmod +x dist/index.js",
-		"dev": "bun run src/index.ts",
-		"lint": "eslint src/**/*.ts",
-		"lint:fix": "eslint src/**/*.ts --fix",
-		"format": "prettier --write \"src/**/*.ts\"",
-		"format:check": "prettier --check \"src/**/*.ts\"",
-		"prepare": "husky",
-		"prepublishOnly": "bun run build"
-	},
-	"keywords": [
-		"cli",
-		"cleanup",
-		"macos",
-		"app-cleaner",
-		"leftover-files",
-		"uninstaller"
-	],
-	"author": "Minagishl",
-	"license": "MIT",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/minagishl/void.git"
-	},
-	"bugs": {
-		"url": "https://github.com/minagishl/void/issues"
-	},
-	"homepage": "https://github.com/minagishl/void#readme",
-	"engines": {
-		"node": ">=18.0.0"
-	},
-	"os": [
-		"darwin"
-	],
-	"dependencies": {
-		"commander": "^11.1.0",
-		"@inquirer/prompts": "^6.0.1",
-		"chalk": "^5.3.0",
-		"ora": "^8.1.1"
-	},
-	"devDependencies": {
-		"@types/node": "^22.10.5",
-		"@typescript-eslint/eslint-plugin": "^8.52.0",
-		"@typescript-eslint/parser": "^8.52.0",
-		"bun-types": "latest",
-		"eslint": "^9.39.2",
-		"eslint-config-prettier": "^10.1.8",
-		"eslint-plugin-prettier": "^5.5.4",
-		"husky": "^9.1.7",
-		"lint-staged": "^16.2.7",
-		"prettier": "^3.7.4",
-		"typescript": "^5.7.2"
-	},
-	"lint-staged": {
-		"*.ts": [
-			"eslint --fix",
-			"prettier --write"
-		]
-	}
+  "name": "@minagishl/void",
+  "version": "0.1.0",
+  "description": "A minimal CLI that sends unwanted macOS apps—and their residual files—into the void.",
+  "type": "module",
+  "bin": {
+    "void": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "bun build src/index.ts --outdir dist --target node --minify && chmod +x dist/index.js",
+    "dev": "bun run src/index.ts",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "format:check": "prettier --check \"src/**/*.ts\"",
+    "prepare": "husky",
+    "prepublishOnly": "bun run build"
+  },
+  "keywords": [
+    "cli",
+    "cleanup",
+    "macos",
+    "app-cleaner",
+    "leftover-files",
+    "uninstaller"
+  ],
+  "author": "Minagishl",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minagishl/void.git"
+  },
+  "bugs": {
+    "url": "https://github.com/minagishl/void/issues"
+  },
+  "homepage": "https://github.com/minagishl/void#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "os": [
+    "darwin"
+  ],
+  "dependencies": {
+    "commander": "^11.1.0",
+    "@inquirer/prompts": "^6.0.1",
+    "chalk": "^5.3.0",
+    "ora": "^8.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "@typescript-eslint/eslint-plugin": "^8.52.0",
+    "@typescript-eslint/parser": "^8.52.0",
+    "bun-types": "latest",
+    "eslint": "^9.39.2",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
+    "prettier": "^3.7.4",
+    "typescript": "^5.7.2"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  }
 }
